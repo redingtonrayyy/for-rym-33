@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Question importante 👀</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdecef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      width: 300px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .yes {
+      background: #ff5c8a;
+      color: white;
+    }
+    .no {
+      background: #ddd;
+    }
+    img {
+      width: 200px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" id="card">
+    <h2>Rym, veux-tu être ma Valentine ? 💘</h2>
+    <button class="yes" onclick="yes()">Oui</button>
+    <button class="no" onclick="no()">Non</button>
+  </div>
+
+  <script>
+    function yes() {
+      document.getElementById("card").innerHTML = `
+        <h2>YAAAAY 🎉💖</h2>
+        <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+      `;
+    }
+    function no() {
+      alert("Mauvaise réponse 😌");
+    }
+  </script>
+</body>
+</html>
